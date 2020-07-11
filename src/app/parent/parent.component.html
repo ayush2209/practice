@@ -1,0 +1,10 @@
+<div class="col col-md-6 offset-3">
+    <p>Parent Data</p>
+    <img [src]="cars" alt="">
+</div>
+<br>
+<!-- <app-child [img]='cars'></app-child> -->
+
+<h1>OutPut Parent</h1>
+<app-child (event) = 'img=$event'></app-child>
+<img src="{{img}}" alt="">

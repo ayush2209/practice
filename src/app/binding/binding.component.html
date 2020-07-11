@@ -1,0 +1,55 @@
+<div class="col-col-md-6 mt-3 card card-body text-center">
+    <h5> <b> Binding </b> : Bind the data or property from model to view or view to model, Data binding is the core concept of Angular 8 and used to define the communication between a component and the DOM. It is a technique to link your data to your view
+        layer. In simple words, you can say that data binding is a communication between your typescript code of your component and your template which user sees. It makes easy to define interactive applications without worrying about pushing and pulling
+        data. </h5>
+    <img src="https://static.javatpoint.com/tutorial/angular8/images/data-binding-in-angular-8.png" alt="" style="height: 100%; width: 100%;">
+    <h5>One Way Data Binding</h5>
+</div>
+<div class="col-col-md-6 mt-3 card card-body">
+    <h1>One Way Data Binding</h1>
+    <p>1.String Interpolation :- String Interpolation is a one-way databinding technique which is used to output the data from a TypeScript code to HTML template (view). </p>
+    <p>Example :- <br> Name is presnt is TypeScript code : <em>{{name}}</em> </p>
+    <br>
+    <p>2.Property Binding :- In property binding, we bind a property of a DOM element to a field which is a defined property in our component TypeScript code.</p>
+    <p>Exmaple : <img [src]="url" alt=""></p>
+    <p>3.Event Binding :- event binding is used to handle the events raised from the DOM like button click, mouse move etc. When the DOM event happens (eg. click, change, keyup), it calls the specified method in the component.</p>
+    <p>Example : <button type="button" (click)="eventBind()" class="btn btn-primary">Click</button></p>
+    <p>3. Style Binding</p>
+    <p>Example:-</p>
+    <h6 [style.color]='color'>Hi I am Style Binding</h6>
+    <p>4: Class Binding</p>
+    <p>Example:- </p>
+    <h6 [class.bg-success]='isApplicable'>I am Class Binding</h6>
+    <p>5.Attribute Directive</p>
+    <p>Example :-</p>
+    <div>
+        <table class="table table-bordered">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>rr</th>
+                <th>rr</th>
+            </tr>
+            <tr attr.colspan={{number}}>
+                <td>Ayush</td>
+                <td>23</td>
+                <td>Bangalore</td>
+            </tr>
+            <tr>
+                <td>Ayush</td>
+                <td>23</td>
+                <td>Bangalore</td>
+            </tr>
+            <tr>
+                <td>Ayush</td>
+                <td>23</td>
+                <td>Bangalore</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <h1>Two Way Data Binding</h1>
+    <input type="text" name="empName" id="" [(ngModel)]='empName'>
+    <p>{{empName}}</p>
+</div>

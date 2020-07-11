@@ -1,0 +1,46 @@
+<div class="col col-md-8 mt-2 offset-2 card card-body" style="box-shadow: 5px 5px 10px 10px #e46969;">
+    <h3> What are structural directives?</h3>
+    <p>Structural directives are responsible for HTML layout. They shape or reshape the DOM's structure, typically by adding, removing, or manipulating elements.</p>
+    <hr>
+    <b> Example:</b>
+    <div>
+        <h5>1. *ngFor</h5>
+        <div *ngFor="let name of empName">
+            <p>Emp Details : Emp Name : {{name.name}} , Emp Age : {{name.age}}</p>
+        </div>
+        <h5>2. *ngIf</h5>
+        <div *ngIf="condition">
+            <p>NgIf is Working for condition is <em>"true"</em></p>
+        </div>
+        <div *ngIf="!condition">
+            <p>NgIF is Working For <em>"False"</em></p>
+        </div>
+    </div>
+    <h3>What is Attribute Directive</h3>
+    <p>Change the appearance or behavior of an element, component, or another directive.</p>
+    <hr>
+    <b> Example:</b>
+    <h5>1. ngClass</h5>
+    <p>NgClass: It controls the appearance of elements by adding and removing CSS classes dynamically.</p>
+    <div>
+        <p [ngClass]="color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus libero molestiae dolores ipsa quos vero incidunt perferendis!</p>
+    </div>
+    <h5>2. ngStyle</h5>
+    <p>NgStyle: It provides Extra styling part.</p>
+    <div>
+        <p [ngStyle]="styleArray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quisquam harum sunt commodi?
+        </p>
+    </div>
+    <h5>2 . [ngSwitch] = "variable Name"</h5>
+    <p>NgSwitch : It check the condition based on that display data on browser</p>
+    <div [ngSwitch]="name">
+        <p *ngSwitchCase=' "Saroj" '>Hi I am Saroj.</p>
+        <p *ngSwitchCase=' "Ayush" '>Hi I am Ayush.</p>
+        <p *ngSwitchDefault>Sorry No Match Found.</p>
+    </div>
+
+    <h3>Custon Directive</h3>
+    <div>
+        <p appFirstCustom highLight>Hello First Custom Directive</p>
+    </div>
+</div>

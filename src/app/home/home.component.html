@@ -1,0 +1,15 @@
+<div class="col-md-3 mt-3 offset-4 card card-body">
+    <form action="" #addMovie="ngForm" (ngSubmit)='addData(addMovie)' >
+        <h3 class="">Add Movie</h3>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter Movie Name" name="fullname" #fullname='ngModel'
+                ngModel>
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control" placeholder="Enter Number" name="earn" #earn='ngModel' ngModel>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-outline-success btn-sm">Submit</button>
+        </div>
+    </form>
+</div>
